@@ -45,6 +45,11 @@ h2{
   background-color: #d5a30a;
 
 }
+
+.header>b{
+  font-size: 40px;
+  text-align: center;
+}
 a{
 
   color: #070303;
@@ -71,4 +76,5 @@ h1{
 }
 .post{
   font-size: 20px;
+  background-color: #69dbcb;
 }

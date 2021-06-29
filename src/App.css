@@ -70,8 +70,9 @@ grid-area: h;
   background-color: #69dbcb;
   margin: 100px 0px 0px 0px;
   height: 90px;
+  font-size: 30px;
   font-weight: bold;
-  height: 800px;
+  height: 1000px;
 }
 
 .content{
@@ -79,5 +80,11 @@ grid-area: h;
   background-color: #d5a30a;
   margin-top: 100px;
   font-weight: bold;
+}
+.content>p{
+  font-size: 30px;
+  font-weight: bold;
+  text-align-last: center;
+margin-top: -10px;
 }
 
