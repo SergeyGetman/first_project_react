@@ -11,3 +11,64 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.one{
+  text-align: center;
+}
+
+ul li{
+  color: #2f0fdc;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+
+h2{
+  font-weight: bold;
+  color: #2f0fdc;
+  background-color: #d5a30a;
+  width: 100%;
+  border-radius: 10px;
+  height: 100px;
+  font-size: 35px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.header__item{
+  height: 90px;
+  width: 100%;
+  background-color: #d5a30a;
+
+}
+a{
+
+  color: #070303;
+  background-color: #f3b1b1;
+
+
+}
+
+.sidebar{
+  height: 700px;
+  width: 300px;
+  background-color: #d5a30a;
+  margin-top: -8px;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: -400px;
+}
+.letter{
+  font-size:3em;
+  font-weight: bold;
+  color: #304ee0;
+}
+.post{
+  font-size: 20px;
+}
