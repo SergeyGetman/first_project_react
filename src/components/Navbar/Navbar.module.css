@@ -1,0 +1,19 @@
+.nav{
+    grid-area: n;
+    background-color: #69dbcb;
+    margin: 100px 0px 0px 0px;
+    height: 90px;
+    font-size: 30px;
+    font-weight: bold;
+    height: 1000px;
+}
+
+.item{
+    color: #f1f0f0;
+}
+.item.active{
+    color: chartreuse;
+    background-color: #100606;
+    width: 33%;
+
+}

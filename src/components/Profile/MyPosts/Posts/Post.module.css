@@ -1,0 +1,10 @@
+
+.item{
+    color: #100f0f;
+    font-size: 35px;
+    background-color: #69dbcb;
+}
+.item img {
+    width: 50px;
+    border-radius: 50%;
+ }

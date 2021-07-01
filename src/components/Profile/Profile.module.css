@@ -1,0 +1,19 @@
+.content{
+    grid-area: c;
+    background-color: #d5a30a;
+    margin-top: 100px;
+    font-weight: bold;
+
+}
+.letter{
+    font-size: 45px;
+    color: #2f0fdc;
+}
+.content>p{
+    font-size: 30px;
+    font-weight: bold;
+    text-align-last: center;
+    margin-top: -10px;
+}
+
+
