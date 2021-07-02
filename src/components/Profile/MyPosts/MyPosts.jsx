@@ -24,22 +24,22 @@ const MyPosts = () => {
 
       <div className={profileModules.item}>
 
-        <div>
-          <textarea name="textarea" id="" cols="90" rows="10" ></textarea>
-          <button>Add post</button>
-          <button>Remove</button>
-        </div>
+          <div>
+            <textarea name="textarea" id="" cols="90" rows="10" ></textarea>
+            <button>Add post</button>
+            <button>Remove</button>
+          </div>
 
         <div>
-          My post
+          My Post
         </div>
 
-         <Post/>
-         <Post/>
-         <Post/>
-         <Post/>
-         <Post/>
-         <Post/>
+        <Post message="How are you ? "/>
+        <Post message="It'/s my first post"/>
+        <Post like="like"/>
+
+
+
 
       </div>
 
