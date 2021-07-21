@@ -6,11 +6,19 @@ font-weight: bold;
 
 }
 .item{
-    font-size: 4em;
+    font-size: 2em;
 
 }
 
 .letter{
     font-size: 45px;
     color: #2f0fdc;
+}
+button{
+    background-color: #10b83f;
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 5%;
+    cursor: pointer;
+    margin: 10px;
 }

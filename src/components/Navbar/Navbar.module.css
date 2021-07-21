@@ -1,19 +1,19 @@
 .nav{
     grid-area: n;
-    background-color: #69dbcb;
+    background-color: #5760c8;
     margin: 100px 0px 0px 0px;
-    height: 90px;
+    height: 70px;
     font-size: 30px;
     font-weight: bold;
-    height: 1000px;
+    height: auto;
 }
 
 .item{
-    color: #f1f0f0;
+    color: #ffffff;
 }
 .item.active{
     color: chartreuse;
     background-color: #100606;
-    width: 33%;
+    width: 39%;
 
 }

@@ -4,6 +4,7 @@ import Content from "../../Content";
 import MyPosts from "./MyPosts/MyPosts";
 
 
+
 const Profile = (props) => {
 
   return (

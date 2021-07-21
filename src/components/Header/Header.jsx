@@ -6,8 +6,8 @@ const Header = () => {
 
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/647px-Apple_logo_black.svg.png"/>
-      <b> Apple</b>
-      <b> Grouse</b>
+      <b> Social</b>
+      <b> Network</b>
 
     </header>
   )
