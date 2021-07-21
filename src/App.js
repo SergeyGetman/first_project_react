@@ -15,12 +15,16 @@ const App = () => {
     <BrowserRouter>
     <div className="app-wrapper">
 
-      <Header/>
+      <Header />
       <Navbar/>
       <div class="app-wrapper-content">
 
         <Route path="/dialogs" component={Dialogs} />
         <Route path="/profile" component ={Profile} />
+        <Route path="/header" component = {Header} />
+        <Route path="/navbar" component = {Dialogs} />
+
+
       </div>
 
     </div>

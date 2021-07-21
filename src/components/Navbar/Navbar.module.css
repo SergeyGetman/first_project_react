@@ -6,14 +6,17 @@
     font-size: 30px;
     font-weight: bold;
     height: auto;
+    padding: 10px;
+
 }
 
-.item{
-    color: #ffffff;
+.item a{
+    color: #211f1f;
+    text-decoration: none;
 }
-.item.active{
-    color: chartreuse;
-    background-color: #100606;
+.item a.activeLink{
+    color: #ea526c;
+
     width: 39%;
 
 }
