@@ -16,6 +16,7 @@ const MyPosts = () => {
 
         <h3><span className={profileModules.letter}>M</span>
           y <span className={profileModules.letter}>P</span>ictures </h3>
+
         <img src="https://static.vecteezy.com/system/resources/thumbnails/000/270/464/small/fox.jpg"/>
       </div>,
 
