@@ -25,7 +25,7 @@ const App = () => {
           <Route path="/dialogs" component={Dialogs}/>
           <Route path="/profile" component={Profile}/>
           <Route path="/news" component={News} />
-          <Route path="/navbar" component={Dialogs}/>
+          <Route path="/navbar" component={Navbar}/>
 
         </div>
 

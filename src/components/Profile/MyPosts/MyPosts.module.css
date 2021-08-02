@@ -8,9 +8,10 @@ font-weight: bold;
 .item{
     font-size: 2em;
     padding: 10px;
-
 }
-
+.item img {
+    padding: 10px;
+}
 .letter{
     font-size: 45px;
     color: #2f0fdc;

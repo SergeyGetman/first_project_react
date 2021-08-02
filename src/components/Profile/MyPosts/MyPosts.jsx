@@ -5,6 +5,15 @@ import Post from "./Posts/Post";
 
 const MyPosts = () => {
 
+  const postData = [
+    {id: 1, message: "How are you ?", likesCount: 'like 23'},
+    {id: 2, message: "It'/s my first post", likesCount: 'like 2'},
+    {id: 3, message: "wow its work", likesCount: 'like 13'},
+
+  ]
+
+  let dialogsElementPost = postData.map(elem => <Post message={elem.message} like={elem.likesCount}/>)
+
   return (
 
     <div className="text">
@@ -16,7 +25,6 @@ const MyPosts = () => {
 
         <h3><span className={profileModules.letter}>M</span>
           y <span className={profileModules.letter}>P</span>ictures </h3>
-
         <img src="https://static.vecteezy.com/system/resources/thumbnails/000/270/464/small/fox.jpg"/>
       </div>,
 
@@ -33,11 +41,9 @@ const MyPosts = () => {
           My Post
         </div>
 
-        <Post message="How are you ?" like="like 0"/>
-        <Post message="It'/s my first post" like="like 13"/>
-        <Post message="wow its work" like="like 2"/>
+        {dialogsElementPost}
 
-      </div>
+        </div>
 
 
   )
