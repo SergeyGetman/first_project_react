@@ -1,12 +1,9 @@
 import React from "react";
-import profileinfo from "./ProfileInfo.module.css"
-
+import styleProfileInfo from "./ProfileInfo.module.css"
 
 const ProfileInfo = (props) => {
-
   return (
     <div>
-
       <div>
         <img src="https://klike.net/uploads/posts/2020-01/1578662816_1.jpg" height="200px" width="400px"/>
       </div>
@@ -16,7 +13,6 @@ const ProfileInfo = (props) => {
       </div>
 
     </div>
-      )
-      }
-
-      export default ProfileInfo;
+  )
+}
+export default ProfileInfo;

@@ -10,7 +10,6 @@ const Profile = (props) => {
   return (
     <div className={profileModules.content}>
 
-      <img src="https://klike.net/uploads/posts/2020-01/1578662816_1.jpg" height="200px" width="400px"/>
 
       <p>Main Content</p>
 

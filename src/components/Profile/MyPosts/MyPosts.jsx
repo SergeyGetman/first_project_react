@@ -3,7 +3,11 @@ import profileModules from './MyPosts.module.css';
 import Post from "./Posts/Post";
 
 
-const MyPosts = () => {
+
+
+
+const MyPosts = (props) => {
+
 
   const postData = [
     {id: 1, message: "How are you ?", likesCount: 'like 23'},
@@ -11,6 +15,7 @@ const MyPosts = () => {
     {id: 3, message: "wow its work", likesCount: 'like 13'},
 
   ]
+
 
   let dialogsElementPost = postData.map(elem => <Post message={elem.message} like={elem.likesCount}/>)
 
@@ -43,10 +48,7 @@ const MyPosts = () => {
 
         {dialogsElementPost}
 
-        </div>
-
-
+      </div>
   )
 }
-
 export default MyPosts;
