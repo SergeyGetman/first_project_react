@@ -9,15 +9,8 @@ import Post from "./Posts/Post";
 const MyPosts = (props) => {
 
 
-  const postData = [
-    {id: 1, message: "How are you ?", likesCount: 'like 23'},
-    {id: 2, message: "It'/s my first post", likesCount: 'like 2'},
-    {id: 3, message: "wow its work", likesCount: 'like 13'},
 
-  ]
-
-
-  let dialogsElementPost = postData.map(elem => <Post message={elem.message} like={elem.likesCount}/>)
+  let dialogsElementPost = props.postData.map(elem => <Post message={elem.message} like={elem.likesCount}/>);
 
   return (
 

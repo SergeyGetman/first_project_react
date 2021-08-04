@@ -25,25 +25,9 @@ const Messages = (props) => {
 
 const Dialogs = (props) => {
 
-  const dialogsData = [
-    {id: 1, name: "Sergodjan"},
-    {id: 2, name: "Alex"},
-    {id: 3, name: "Martin"},
-    {id: 4, name: "Keer"},
-    {id: 5, name: "Locky"},
-  ];
 
-  const messagesData = [
-    {id: 1, message: "How are you ?"},
-    {id: 2, message: "It'"},
-    {id: 3, message: "wow"},
-    {id: 4, message: "wow"},
-    {id: 5, message: "wow"},
-
-  ]
-
-  let dialogsElements = dialogsData.map(dialog => <DialogItem name={dialog.name} id={dialog.id}/>)
-  let messageElement = messagesData.map(messageOfArray => <Messages message={messageOfArray.message}/>)
+  let dialogsElements = props.dialogsData.map(dialog => <DialogItem name={dialog.name} id={dialog.id}/>)
+  let messageElement = props.messagesData.map(messageOfArray => <Messages message={messageOfArray.message}/>)
 
 
   // выносим все имена и id на верх через props
