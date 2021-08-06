@@ -26,8 +26,8 @@ const Messages = (props) => {
 const Dialogs = (props) => {
 
 
-  let dialogsElements = props.dialogsData.map(dialog => <DialogItem name={dialog.name} id={dialog.id}/>)
-  let messageElement = props.messagesData.map(messageOfArray => <Messages message={messageOfArray.message}/>)
+  let dialogsElements = props.state.dialogsData.map(dialog => <DialogItem name={dialog.name} id={dialog.id}/>)
+  let messageElement = props.state.messagesData.map(messageOfArray => <Messages message={messageOfArray.message}/>)
 
 
   // выносим все имена и id на верх через props

@@ -28,10 +28,10 @@ const Profile = (props) => {
       </div>
 
       <Content/>
-
-      <MyPosts postData={props.postData} />
-
       <ProfileInfo/>
+      <MyPosts postData={props.state.postData} />
+
+
 
     </div>
   )
