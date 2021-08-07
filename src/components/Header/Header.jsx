@@ -5,7 +5,7 @@ const Header = () => {
   return (<header className={classes.header}>
 
       <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/647px-Apple_logo_black.svg.png"/>
+        src="https://pllsll.com/assets/tmp/storage/b6/be/79/b6b2a3834f4.jpg"/>
       <b> Social</b>
       <b> Network</b>
 

@@ -22,6 +22,7 @@ const App = (props) => {
         <Navbar/>
 
 
+
         <div class="app-wrapper-content">
 
           <Route path="/dialogs" render={() =>
