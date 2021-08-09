@@ -6,15 +6,12 @@ import Dialogs from "./components/Dialogs/Dialogs";
 import Profile from "./components/Profile/Profile";
 import News from "./components/News/News";
 import {BrowserRouter, Route} from "react-router-dom";
-import state from "./redux/state";
-
+import Friend from "./components/People/friends";
 
 
 const App = (props) => {
 
   return (
-
-
     <BrowserRouter>
       <div className="app-wrapper">
 
@@ -30,8 +27,14 @@ const App = (props) => {
 
           <Route path="/profile" render={() =>
             <Profile state={props.state.profilePage}/>} />
+
+
+
           <Route path="/news" component={News}/>
           <Route path="/navbar" component={Navbar}/>
+
+          {/*<Route path="/friends" render={() =>*/}
+          {/*  <Friend state={props.state.profilePage.sidebar.pictures}/>}/>*/}
 
 
         </div>

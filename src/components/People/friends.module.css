@@ -1,15 +1,26 @@
 
-
-
-.sayhi{
-   color: white;
+.sayhi {
+    color: white;
     font-size: 50px;
     padding-top: 40px;
     text-align: center;
 }
 
-.avatar{
-    background-color: #e6af09;
-    color: #100f0f;
+.insideFriends {
+    font-size: 25px;
+}
+
+.numbers {
+    display: inline-block;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 900;
     text-align: center;
+
+}
+.numbers img {
+    height: 60px;
+    width: 60px;
+    background-color: #f1f0f0;
+    border-radius: 50%;
 }

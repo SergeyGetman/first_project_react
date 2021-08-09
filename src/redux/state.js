@@ -7,7 +7,9 @@ let state = {
       {id: 3, message: "wow its work", likesCount: 'like 13'},
 
     ],
-    sidebar : {}, // внести сюда картинки для лого
+    sidebar : {
+     mess : "asdqweqwe sad qw eq weq e"
+    }, // внести сюда картинки для лого
 
   },
 
