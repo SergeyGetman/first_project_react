@@ -17,10 +17,12 @@ font-weight: bold;
     color: #2f0fdc;
 }
 button{
-    background-color: #10b83f;
+    background-color: #0b9f34;
     color: #ffffff;
     font-size: 20px;
+    width: 100px;
     border-radius: 5%;
     cursor: pointer;
-    margin: 10px;
+    margin-left: 80px;
+    position: relative;
 }

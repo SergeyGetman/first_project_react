@@ -1,5 +1,11 @@
 
 let state = {
+
+  text : {
+    id : 1,
+    messageInside : "Ты думаешь ты самый умный чел на земле ? LOL"
+  },
+
   profilePage : {
     postData : [
       {id: 1, message: "How are you ?", likesCount: 'like 23'},
@@ -31,6 +37,17 @@ let state = {
     ],
   }
 
+}
+
+export let addPost;
+addPost = (postMessage) => {
+
+  let newPost = {
+    id : 5,
+     message : postMessage,
+     likesCount : 0
+  };
+  state.profilePage.postData.push(newPost)
 }
 
 export default state;

@@ -5,8 +5,10 @@ import Navbar from "./components/Navbar/Navbar";
 import Dialogs from "./components/Dialogs/Dialogs";
 import Profile from "./components/Profile/Profile";
 import News from "./components/News/News";
-import {BrowserRouter, Route} from "react-router-dom";
+import {BrowserRouter, NavLink, Route} from "react-router-dom";
 import Friend from "./components/People/friends";
+import classes from "./components/Navbar/Navbar.module.css";
+import {addPost} from "./redux/state";
 
 
 const App = (props) => {
@@ -20,21 +22,28 @@ const App = (props) => {
 
 
 
-        <div class="app-wrapper-content">
+        <div className="app-wrapper-content">
+
+
+
+          <Route path="/navbar" render={() =>
+            <Navbar state={props.state.text.messageInside}/>}/>
+
+
 
           <Route path="/dialogs" render={() =>
             <Dialogs state={props.state.dialogsPage}/>}/>
 
           <Route path="/profile" render={() =>
-            <Profile state={props.state.profilePage}/>} />
+            <Profile state={props.state.profilePage} addPost={props.addPost}/>} />
 
 
 
           <Route path="/news" component={News}/>
-          <Route path="/navbar" component={Navbar}/>
+          {/*<Route path="/navbar" component={Navbar}/>*/}
 
-          {/*<Route path="/friends" render={() =>*/}
-          {/*  <Friend state={props.state.profilePage.sidebar.pictures}/>}/>*/}
+          <Route path="/friends" render={() =>
+            <Friend state={props.state.profilePage.sidebar.mess}/>}/>
 
 
         </div>

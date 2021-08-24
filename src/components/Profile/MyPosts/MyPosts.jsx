@@ -12,6 +12,13 @@ const MyPosts = (props) => {
 
   let dialogsElementPost = props.postData.map(elem => <Post message={elem.message} like={elem.likesCount}/>);
 
+  let newPostElement = React.createRef()
+  let addPost = () => {
+   let text = newPostElement.current.value;
+   props.addPost(text)
+  }
+
+
   return (
 
     <div className="text">
@@ -30,8 +37,8 @@ const MyPosts = (props) => {
       <div className={profileModules.item}>
 
         <div>
-          <textarea name="textarea" id="" cols="90" rows="10"></textarea>
-          <button>Add post</button>
+          <textarea ref={newPostElement} rows="10" cols="100"></textarea>
+          <button onClick={addPost}>Add post</button>
 
         </div>
 

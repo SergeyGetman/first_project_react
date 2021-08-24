@@ -4,6 +4,7 @@ import friendsModules from "./friends.module.css"
 
 
 const Friend = () => {
+
   return (
 
     <div className={friendsModules.sayhi}>Friends
