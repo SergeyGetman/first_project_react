@@ -24,10 +24,10 @@ const Navbar = (props) => {
               <NavLink to="/news" activeClassName={classes.activeLink}>News </NavLink>
             </div>
             <div className={classes.item}>
-              <NavLink to="/navbar" activeClassName={classes.activeLink}>Dublicate </NavLink>
+              <NavLink to="/friends" activeClassName={classes.activeLink}>Friends </NavLink>
             </div>
 
-          {/*<Friend state={props.state.profilePage.sidebar.pictures}/>*/}
+
 
           <Friend/>
         </nav>

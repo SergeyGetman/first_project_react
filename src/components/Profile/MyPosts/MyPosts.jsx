@@ -3,21 +3,22 @@ import profileModules from './MyPosts.module.css';
 import Post from "./Posts/Post";
 
 
-
-
-
 const MyPosts = (props) => {
 
 
+  let dialogsElementPost = props.postData.map(elem => <Post message={elem.message}
+                                                            like={elem.likesCount}/>);
 
-  let dialogsElementPost = props.postData.map(elem => <Post message={elem.message} like={elem.likesCount}/>);
-
-  let newPostElement = React.createRef()
+  let newPostElement = React.createRef();
   let addPost = () => {
-   let text = newPostElement.current.value;
-   props.addPost(text)
+    props.addPost()
   }
 
+  let onPostCahge = () => {
+    let onlyTetx = newPostElement.current.value
+    props.updateNewPostText(onlyTetx)
+
+  }
 
   return (
 
@@ -30,14 +31,16 @@ const MyPosts = (props) => {
 
         <h3><span className={profileModules.letter}>M</span>
           y <span className={profileModules.letter}>P</span>ictures </h3>
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/000/270/464/small/fox.jpg"/>
+        <img
+          src="https://static.vecteezy.com/system/resources/thumbnails/000/270/464/small/fox.jpg"/>
       </div>,
 
 
       <div className={profileModules.item}>
 
         <div>
-          <textarea ref={newPostElement} rows="10" cols="100"></textarea>
+          <textarea onChange={onPostCahge} ref={newPostElement} rows="10" cols="100"
+                    value={props.newPostText}/>
           <button onClick={addPost}>Add post</button>
 
         </div>

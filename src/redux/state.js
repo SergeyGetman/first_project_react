@@ -1,3 +1,4 @@
+import {rerenderEntireTree} from "../render";
 
 let state = {
 
@@ -13,6 +14,7 @@ let state = {
       {id: 3, message: "wow its work", likesCount: 'like 13'},
 
     ],
+    newPostText : "My favorite",
     sidebar : {
      mess : "asdqweqwe sad qw eq weq e"
     }, // внести сюда картинки для лого
@@ -39,15 +41,25 @@ let state = {
 
 }
 
+window.state = state;
+
 export let addPost;
-addPost = (postMessage) => {
+
+addPost = () => {
 
   let newPost = {
-    id : 5,
-     message : postMessage,
+     id : 5,
+     message : state.profilePage.newPostText ,
      likesCount : 0
   };
-  state.profilePage.postData.push(newPost)
+  state.profilePage.postData.push(newPost);
+  state.profilePage.newPostText = "";
+  rerenderEntireTree(state)
+}
+
+export let updateNewPostText = (newTetx) => {
+  state.profilePage.newPostText = newTetx;
+  rerenderEntireTree(state)
 }
 
 export default state;
