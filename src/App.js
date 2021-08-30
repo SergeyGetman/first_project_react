@@ -29,8 +29,6 @@ const App = (props) => {
           <Route path="/navbar" render={() =>
             <Navbar state={props.state.text.messageInside}/>}/>
 
-
-
           <Route path="/dialogs" render={() =>
             <Dialogs state={props.state.dialogsPage}/>}/>
 
@@ -39,17 +37,13 @@ const App = (props) => {
                      updateNewPostText={props.updateNewPostText}
                      addPost={props.addPost}/>} />
 
-
-
           <Route path="/news" component={News}/>
           {/*<Route path="/navbar" component={Navbar}/>*/}
 
           <Route path="/friends" render={() =>
             <Friend state={props.state.profilePage.sidebar.mess}/>}/>
 
-
         </div>
-
 
       </div>
 
