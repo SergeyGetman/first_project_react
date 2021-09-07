@@ -12,7 +12,6 @@ const Profile = (props) => {
   return (
     <div className={profileModules.content}>
 
-
       <p>Main Content</p>
 
       <div className="text">
